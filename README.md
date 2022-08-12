@@ -1,8 +1,8 @@
-# Program-Selector
+# Program-Suggest
 
 #### By _William Mentzer_
 
-#### _Program-Selector_
+#### _Program-Suggest_
 
 ## _Github Pages Link_
 
@@ -27,7 +27,7 @@ _A questionare to determine which programming language you should look into._
 
 ## Known Bugs
 
-* __
+* _CSS spacing margin issues with the first question_
 
 ## License
 
