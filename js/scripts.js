@@ -1,14 +1,10 @@
 function questionareParseAndDisplay() {
+
   let answerQuestion1 = parseInt(document.querySelector('input[name="questionOne"]:checked').value);
-  console.log(answerQuestion1);
   let answerQuestion2 = parseInt(document.querySelector('input[name="questionTwo"]:checked').value);
-  console.log(answerQuestion2);
   let answerQuestion3 = parseInt(document.querySelector('input[name="questionThree"]:checked').value);
-  console.log(answerQuestion3);
   let answerQuestion4 = parseInt(document.querySelector('input[name="questionFour"]:checked').value);
-  console.log(answerQuestion4);
   let answerQuestion5 = parseInt(document.querySelector('input[name="questionFive"]:checked').value);
-  console.log(answerQuestion5);
 
   let answerTotal = 0;
 
@@ -17,18 +13,31 @@ function questionareParseAndDisplay() {
   answerTotal = answerTotal + answerQuestion3;
   answerTotal = answerTotal + answerQuestion4;
   answerTotal = answerTotal + answerQuestion5;
-  
-  console.log(answerTotal);
+
+  let pythonDisplay = document.getElementById("Python");
+  pythonDisplay.setAttribute("class", "hidden");
+
+  let javascriptDisplay = document.getElementById("Python");
+  javascriptDisplay.setAttribute("class", "hidden");
+
+  let cDisplay = document.getElementById("Python");
+  cDisplay.setAttribute("class", "hidden");
 
   if (answerTotal >= 16) {
     document.querySelector("div#Python").removeAttribute("class");
-  } else if (answerTotal <= 15 || answerTotal >= 8) {
+  } else if (answerTotal <= 15 && answerTotal >= 8) {
     document.querySelector("div#JavaScript").removeAttribute("class");
   } else if (answerTotal <= 7) {
-    document.querySelector("div#C#").removeAttribute("class");
+    document.querySelector("div#C").removeAttribute("class");
   } else if (null) {
     console.log("MACHINE BROKE");
   };
+
+  document.querySelector('input[name="questionOne"]:checked').checked = false;
+  document.querySelector('input[name="questionTwo"]:checked').checked = false;
+  document.querySelector('input[name="questionThree"]:checked').checked = false;
+  document.querySelector('input[name="questionFour"]:checked').checked = false;
+  document.querySelector('input[name="questionFive"]:checked').checked = false;
   
 }
 
