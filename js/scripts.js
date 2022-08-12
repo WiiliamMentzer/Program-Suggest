@@ -17,10 +17,10 @@ function questionareParseAndDisplay() {
   let pythonDisplay = document.getElementById("Python");
   pythonDisplay.setAttribute("class", "hidden");
 
-  let javascriptDisplay = document.getElementById("Python");
+  let javascriptDisplay = document.getElementById("JavaScript");
   javascriptDisplay.setAttribute("class", "hidden");
 
-  let cDisplay = document.getElementById("Python");
+  let cDisplay = document.getElementById("C");
   cDisplay.setAttribute("class", "hidden");
 
   if (answerTotal >= 16) {
@@ -39,6 +39,20 @@ function questionareParseAndDisplay() {
   document.querySelector('input[name="questionFour"]:checked').checked = false;
   document.querySelector('input[name="questionFive"]:checked').checked = false;
   
+  const resetQuestion1 = document.getElementById("answer1");
+  resetQuestion1.checked = true
+
+  const resetQuestion2 = document.getElementById("answer5");
+  resetQuestion2.checked = true
+
+  const resetQuestion3 = document.getElementById("answer9");
+  resetQuestion3.checked = true
+
+  const resetQuestion4 = document.getElementById("answer13");
+  resetQuestion4.checked = true
+
+  const resetQuestion5 = document.getElementById("answer17");
+  resetQuestion5.checked = true
 }
 
 window.addEventListener("load", function() {
