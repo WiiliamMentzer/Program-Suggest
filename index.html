@@ -7,95 +7,122 @@
     <title> Programming Suggestor </title>
   </head>
   <body>
-    <h1>Please answer the following questions.</h2><br>
+    <div class="containter-fluid">
+      <div class="jumbotron">
+        <h1 class="display-3">Choose Your Language!</h1>
 
-    <form id="questionareForm">
-      <h3>What is your favorite color from this list?</h2>
-      <div>
-        <label>
-          <input id="answer1" type="radio" name="questionOne" value="1" checked>
-        </label><br>
-        <label>
-          <input id="answer2" type="radio" name="questionOne" value="2">
-        </label><br>
-        <label>
-          <input id="answer3" type="radio" name="questionOne" value="3">
-        </label><br>
-        <label>
-          <input id="answer4" type="radio" name="questionOne" value="4">
-        </label><br>
+        <p  class="lead">This page is created to test you as an individual to see which programming language you are most compatable with.</p>
       </div>
-      <div>
-        <h2>What is your favorite color from this list?</h2>
-        <label>
-          <input id="answer5" type="radio" name="questionTwo" value="1"  checked>
-        </label><br>
-        <label>
-          <input id="answer6" type="radio" name="questionTwo" value="2">
-        </label><br>
-        <label>
-          <input id="answer7" type="radio" name="questionTwo" value="3">
-        </label><br>
-        <label>
-          <input id="answer8" type="radio" name="questionTwo" value="4">
-        </label><br>
+    </div><br>
+
+    <form id="questionareForm" class="container questionAlign">
+      <div class="card">
+        <h1>Please answer the following questions.</h1><br>
+        <div class="container">
+          <h2>What is your favorite color from this list?</h2><br>
+          <div class="card">
+            <label>
+              <input id="answer1" type="radio" name="questionOne" value="1" checked> Blue
+            </label><br>
+            <label>
+              <input id="answer2" type="radio" name="questionOne" value="2"> Red
+            </label><br>
+            <label>
+              <input id="answer3" type="radio" name="questionOne" value="3"> Green
+            </label><br>
+            <label>
+              <input id="answer4" type="radio" name="questionOne" value="4"> Yellow
+            </label><br>
+          </div>
+        </div>
+        <div class="container">
+          <h2>How often do you play games?</h2>
+          <div class="card">
+            <label>
+              <input id="answer5" type="radio" name="questionTwo" value="1"  checked> Never stop playing them.
+            </label><br>
+            <label>
+              <input id="answer6" type="radio" name="questionTwo" value="2"> A fair bit.
+            </label><br>
+            <label>
+              <input id="answer7" type="radio" name="questionTwo" value="3"> Only on occasion.
+            </label><br>
+            <label>
+              <input id="answer8" type="radio" name="questionTwo" value="4"> I don't even play games.
+            </label><br>
+          </div>
+        </div>
+        <div class="container">
+          <h2>What is the answer to life?</h2>
+          <div class="card">
+            <label>
+              <input id="answer9" type="radio" name="questionThree" value="1" checked> 42
+            </label><br>
+            <label>
+              <input id="answer10" type="radio" name="questionThree" value="2"> I don't know!?
+            </label><br>
+            <label>
+              <input id="answer11" type="radio" name="questionThree" value="3"> Live and breathe electronics.
+            </label><br>
+            <label>
+              <input id="answer12" type="radio" name="questionThree" value="4"> Be yourself.
+            </label><br>
+          </div>
+        </div>
+        <div class="container">
+          <h2>How much do you enjoy a challenge?</h2>
+          <div class="card">
+            <label>
+              <input id="answer13" type="radio" name="questionFour" value="1" checked> I have never beat a challenge.
+            </label><br>
+            <label>
+              <input id="answer14" type="radio" name="questionFour" value="2"> I struggle with challenges.
+            </label><br>
+            <label>
+              <input id="answer15" type="radio" name="questionFour" value="3"> I like a fair challenge, but not overkill.
+            </label><br>
+            <label>
+              <input id="answer16" type="radio" name="questionFour" value="4"> Only the most difficult options please!
+            </label><br>
+          </div>
+        </div>
+        <div class="container">
+          <h2>How are you doing today?</h2>
+          <div class="card">
+            <label>
+              <input id="answer17" type="radio" name="questionFive" value="1" checked> Just fine thank you!
+            </label><br>
+            <label>
+              <input id="answer18" type="radio" name="questionFive" value="2"> Could be better, but not every day is a winner.
+            </label><br>
+            <label>
+              <input id="answer19" type="radio" name="questionFive" value="3"> Unfortunate day so far.
+            </label><br>
+            <label>
+              <input id="answer20" type="radio" name="questionFive" value="4"> I want to forget today happened.
+            </label><br>
+          </div>
+        </div>
+        <button type="submit">Lets See the Language!</button>
       </div>
-      <div>
-        <h2>What is your favorite color from this list?</h2>
-        <label>
-          <input id="answer9" type="radio" name="questionThree" value="1" checked>
-        </label><br>
-        <label>
-          <input id="answer10" type="radio" name="questionThree" value="2">
-        </label><br>
-        <label>
-          <input id="answer11" type="radio" name="questionThree" value="3">
-        </label><br>
-        <label>
-          <input id="answer12" type="radio" name="questionThree" value="4">
-        </label><br>
-      </div>
-      <div>
-        <h2>What is your favorite color from this list?</h2>
-        <label>
-          <input id="answer13" type="radio" name="questionFour" value="1" checked>
-        </label><br>
-        <label>
-          <input id="answer14" type="radio" name="questionFour" value="2">
-        </label><br>
-        <label>
-          <input id="answer15" type="radio" name="questionFour" value="3">
-        </label><br>
-        <label>
-          <input id="answer16" type="radio" name="questionFour" value="4">
-        </label><br>
-      </div>
-      <div>
-        <h2>What is your favorite color from this list?</h2>
-        <label>
-          <input id="answer17" type="radio" name="questionFive" value="1" checked>
-        </label><br>
-        <label>
-          <input id="answer18" type="radio" name="questionFive" value="2">
-        </label><br>
-        <label>
-          <input id="answer19" type="radio" name="questionFive" value="3">
-        </label><br>
-        <label>
-          <input id="answer20" type="radio" name="questionFive" value="4">
-        </label><br>
-      </div>
-      <button type="submit">Lets See the Language!</button>
     </form>
-
-    <div id="Python" class="hidden">
-      <p>test python</p>
-    </div>
-    <div id="JavaScript" class="hidden">
-      <p>test JavaScript</p>
-    </div>
-    <div id="C" class="hidden">
-      <p>test c#</p>
+    <div class="container">
+      <div class="card">
+        <div id="Python" class="hidden">
+          <h1>Congrats, you are most compatable with Python!</h1>
+          <p>Ultrices in iaculis nunc sed augue lacus viverra vitae. Lobortis feugiat vivamus at augue eget. Aliquet bibendum enim facilisis gravida neque convallis a cras. Pellentesque habitant morbi tristique senectus. Massa eget egestas purus viverra accumsan in nisl nisi. Varius vel pharetra vel turpis nunc eget lorem dolor sed. Convallis tellus id interdum velit laoreet. Ut sem viverra aliquet eget sit. Dolor sit amet consectetur adipiscing elit duis tristique sollicitudin. Tellus molestie nunc non blandit massa. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc. Tempor commodo ullamcorper a lacus. Consequat mauris nunc congue nisi vitae suscipit. </p>
+        </div>
+        <div id="JavaScript" class="hidden">
+          <h1>Congrats you are most compatable with JavaScript!</h1>
+          <p>Ultrices in iaculis nunc sed augue lacus viverra vitae. Lobortis feugiat vivamus at augue eget. Aliquet bibendum enim facilisis gravida neque convallis a cras. Pellentesque habitant morbi tristique senectus. Massa eget egestas purus viverra accumsan in nisl nisi. Varius vel pharetra vel turpis nunc eget lorem dolor sed. Convallis tellus id interdum velit laoreet. Ut sem viverra aliquet eget sit. Dolor sit amet consectetur adipiscing elit duis tristique sollicitudin. Tellus molestie nunc non blandit massa. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc. Tempor commodo ullamcorper a lacus. Consequat mauris nunc congue nisi vitae suscipit. 
+          </p>
+        </div>
+        <div id="C" class="hidden">
+          <h1>Congrats you are most compatable with C#</h1>
+          <p>Ultrices in iaculis nunc sed augue lacus viverra vitae. Lobortis feugiat vivamus at augue eget. Aliquet bibendum enim facilisis gravida neque convallis a cras. Pellentesque habitant morbi tristique senectus. Massa eget egestas purus viverra accumsan in nisl nisi. Varius vel pharetra vel turpis nunc eget lorem dolor sed. Convallis tellus id interdum velit laoreet. Ut sem viverra aliquet eget sit. Dolor sit amet consectetur adipiscing elit duis tristique sollicitudin. Tellus molestie nunc non blandit massa. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc. Tempor commodo ullamcorper a lacus. Consequat mauris nunc congue nisi vitae suscipit.
+          </p>
+        </div>
+      </div>
     </div>
   </body>
 </html>

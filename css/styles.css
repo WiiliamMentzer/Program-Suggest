@@ -1,3 +1,50 @@
 .hidden {
   display: none;
 }
+
+body {
+  background-color:rgb(100, 100, 100)
+}
+
+.jumbotron {
+  text-align: center;
+}
+
+.questionAlign h1 {
+  text-align: center;
+} 
+
+.questionAlign h2 {
+  text-align: center;
+} 
+
+h1 {
+  margin-bottom: 2rem;
+  font-weight: bolder;
+}
+
+label {
+  margin-left: 14rem;
+  font-size: x-large;
+}
+
+#python {
+  font-size: medium;
+}
+
+#JavaScript  {
+  font-size: medium;
+}
+
+#C {
+  font-size: medium;
+}
+
+button {
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+h2 {
+  margin: 2rem;
+}
