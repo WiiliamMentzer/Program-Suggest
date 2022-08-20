@@ -1,4 +1,5 @@
-function questionareParseAndDisplay() {
+function questionareParseAndDisplay(event) {
+  event.preventDefault();
 
   let answerQuestion1 = parseInt(document.querySelector('input[name="questionOne"]:checked').value);
   let answerQuestion2 = parseInt(document.querySelector('input[name="questionTwo"]:checked').value);
@@ -8,11 +9,11 @@ function questionareParseAndDisplay() {
 
   let answerTotal = 0;
 
-  answerTotal = answerTotal + answerQuestion1;
-  answerTotal = answerTotal + answerQuestion2;
-  answerTotal = answerTotal + answerQuestion3;
-  answerTotal = answerTotal + answerQuestion4;
-  answerTotal = answerTotal + answerQuestion5;
+  answerTotal += answerQuestion1;
+  answerTotal += answerQuestion2;
+  answerTotal += answerQuestion3;
+  answerTotal += answerQuestion4;
+  answerTotal += answerQuestion5;
 
   let pythonDisplay = document.getElementById("Python");
   pythonDisplay.setAttribute("class", "hidden");
@@ -57,10 +58,5 @@ function questionareParseAndDisplay() {
 
 window.addEventListener("load", function() {
   const form = document.getElementById("questionareForm");
-  form.addEventListener("submit", submitInput);
+  form.addEventListener("submit", questionareParseAndDisplay);
 });
-
-function submitInput(event) {
-  event.preventDefault();
-  questionareParseAndDisplay();
-};
