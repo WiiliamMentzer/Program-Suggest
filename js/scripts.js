@@ -40,20 +40,12 @@ function questionareParseAndDisplay(event) {
   document.querySelector('input[name="questionFour"]:checked').checked = false;
   document.querySelector('input[name="questionFive"]:checked').checked = false;
   
-  const resetQuestion1 = document.getElementById("answer1");
-  resetQuestion1.checked = true
+  document.getElementById("answer1").checked = true;
+  document.getElementById("answer5").checked = true;
+  document.getElementById("answer9").checked = true;
+  document.getElementById("answer13").checked = true;
+  document.getElementById("answer17").checked = true;
 
-  const resetQuestion2 = document.getElementById("answer5");
-  resetQuestion2.checked = true
-
-  const resetQuestion3 = document.getElementById("answer9");
-  resetQuestion3.checked = true
-
-  const resetQuestion4 = document.getElementById("answer13");
-  resetQuestion4.checked = true
-
-  const resetQuestion5 = document.getElementById("answer17");
-  resetQuestion5.checked = true
 }
 
 window.addEventListener("load", function() {
