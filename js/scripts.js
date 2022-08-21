@@ -15,24 +15,20 @@ function questionareParseAndDisplay(event) {
   answerTotal += answerQuestion4;
   answerTotal += answerQuestion5;
 
-  let pythonDisplay = document.getElementById("Python");
-  pythonDisplay.setAttribute("class", "hidden");
-
-  let javascriptDisplay = document.getElementById("JavaScript");
-  javascriptDisplay.setAttribute("class", "hidden");
-
-  let cDisplay = document.getElementById("C");
-  cDisplay.setAttribute("class", "hidden");
+  let languageDisplay = document.getElementById("language");
+  languageDisplay.setAttribute("class", "hidden");
 
   if (answerTotal >= 16) {
-    document.querySelector("div#Python").removeAttribute("class");
+    document.getElementById("languageChoice").innerHTML = "Congrats, you are most compatable with Python!";
   } else if (answerTotal <= 15 && answerTotal >= 8) {
-    document.querySelector("div#JavaScript").removeAttribute("class");
+    document.getElementById("languageChoice").innerHTML = "Congrats, you are most compatable with JavaScipt.";
   } else if (answerTotal <= 7) {
-    document.querySelector("div#C").removeAttribute("class");
+    document.getElementById("languageChoice").innerHTML = "Congrats, you are most compatable with C#.";
   } else if (null) {
     console.log("MACHINE BROKE");
   };
+
+  document.getElementById("language").removeAttribute("class");
 
   document.querySelector('input[name="questionOne"]:checked').checked = false;
   document.querySelector('input[name="questionTwo"]:checked').checked = false;
